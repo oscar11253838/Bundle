@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TextView;
 
 import java.text.NumberFormat;
@@ -31,6 +32,7 @@ public class ResultActivity extends AppCompatActivity {
                 "\nsum = " + sum +
                 "\naverage =  " + nf.format(average);
         tvResult.setText(text);
-
     }
+
+    public void onBackClick(View view){ finish();}
 }
