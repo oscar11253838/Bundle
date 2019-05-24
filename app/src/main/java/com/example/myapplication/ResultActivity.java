@@ -12,7 +12,7 @@ public class ResultActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
-        setContentView(R.layout.result_activity);
+        setContentView(R.layout.activity_result);
         tvResult = (TextView) findViewById(R.id.tvResult);
         showResults();
     }
@@ -23,6 +23,7 @@ public class ResultActivity extends AppCompatActivity {
         int programming = bundle.getInt("programming");
         int dataStructure = bundle.getInt("dataStructure");
         int algorithm = bundle.getInt("algorithm");
+        int sum = programming + dataStructure + algorithm;
         double average = sum / 3.0;
         String text = "programming = " + programming +
                 "\ndataStructure = " + dataStructure +
